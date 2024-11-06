@@ -1,0 +1,41 @@
+/* src/styles/EditNews.css */
+.edit-news-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.edit-news-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.edit-news-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-news-container input,
+.edit-news-container textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-news-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-news-container button:hover {
+  background-color: #0056b3;
+}

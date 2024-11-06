@@ -1,0 +1,87 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  padding: 20px;
+  background-color: #f0f0f0; /* Fundo claro */
+  font-family: Arial, sans-serif; /* Fonte agradável */
+}
+
+
+
+.login-title {
+  font-size: 2rem; /* Tamanho do título */
+  margin-bottom: 20px; /* Margem inferior */
+  color: #333; /* Cor escura */
+  text-align: center; /* Centraliza o texto */
+}
+
+.input-field {
+  margin-bottom: 15px; /* Espaçamento entre os campos */
+  width: 100%; /* Ocupa toda a largura do container */
+}
+
+.input-field input {
+  width: 100%; /* Campo de entrada ocupa toda a largura */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1rem; /* Tamanho da fonte */
+  transition: border-color 0.2s; /* Transição suave */
+}
+
+.input-field input:focus {
+  border-color: #4CAF50; /* Cor verde ao focar no campo */
+  outline: none; /* Remove o contorno padrão */
+}
+
+
+
+.login-container {
+  display: flex; /* Usar flexbox para layout */
+  flex-direction: column; /* Alinhar os itens em coluna */
+  align-items: center; /* Centralizar itens horizontalmente */
+  justify-content: center; /* Centralizar itens verticalmente */
+  background-color: #ffffff; /* Fundo branco para o formulário */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  padding: 30px; /* Espaçamento interno */
+  width: 100%;
+  max-width: 400px; /* Largura máxima do formulário */
+}
+
+.login-button {
+  width: 100%; /* O botão ocupa toda a largura disponível */
+  max-width: 200px; /* Define uma largura máxima para o botão */
+  margin-top: 20px; /* Margem superior */
+  padding: 10px; /* Espaçamento interno */
+  border: none; /* Remove borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  background-color: #4a90e2; /* Verde para o botão */
+  color: white; /* Texto branco */
+  font-size: 1rem; /* Tamanho da fonte */
+  cursor: pointer; /* Mão ao passar o mouse */
+  transition: background-color 0.2s; /* Transição suave */
+  text-align: center; /* Centraliza o texto no botão */
+}
+
+.login-button:hover {
+  background-color: #4a90e2; /* Verde mais escuro ao passar o mouse */
+}
+
+
+.register-link {
+  margin-top: 10px; /* Margem superior */
+  text-align: center; /* Centraliza o link */
+}
+
+.register-link a {
+  color: #4a90e2; /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.register-link a:hover {
+  text-decoration: underline; /* Sublinha ao passar o mouse */
+}

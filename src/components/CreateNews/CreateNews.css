@@ -1,0 +1,49 @@
+/* src/components/CreateNews.css */
+.create-news-container {
+  background-color: #007bff; /* Azul */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  width: 400px; /* Ajusta a largura do contêiner */
+  margin: 100px auto; /* Centraliza verticalmente e horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.create-news-container h1 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.create-news-container input,
+.create-news-container textarea {
+  width: 100%; /* Ajusta a largura dos campos */
+  margin-bottom: 15px; /* Espaço abaixo dos campos */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+.create-news-container button {
+  width: 100%; /* Ajusta a largura dos botões */
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000; /* Verde */
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+  transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+.create-news-container button.back-button {
+  background-color: #007bff; /* Azul para o botão de voltar */
+}
+
+.create-news-container button:hover {
+  opacity: 0.9; /* Efeito hover */
+}
+
+.create-news-container .create-button:hover {
+  background-color: #007bff; /* Cor ao passar o mouse */
+}

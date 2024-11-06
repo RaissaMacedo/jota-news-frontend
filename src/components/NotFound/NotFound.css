@@ -1,0 +1,23 @@
+/* src/styles/NotFound.css */
+.not-found-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.not-found-container p {
+  font-size: 1.2rem;
+}
+
+.not-found-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.not-found-container a:hover {
+  text-decoration: underline;
+}
