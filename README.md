@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+1. Clonar o repositório
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+   https://github.com/RaissaMacedo/jota-news-frontend
 
-## Available Scripts
+2. Navegar até o diretório do projeto
 
-In the project directory, you can run:
+   cd jota-news-frontend
 
-### `npm start`
+3. Instalar as dependências
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Rodar a aplicação
 
-### `npm test`
+   npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A aplicação será iniciada e estará disponível em http://localhost:3000.
 
-### `npm run build`
+Funcionalidades
+1. Login
+Permite que os administradores se autentiquem e acessem a área restrita do dashboard.
+O login é feito com email e senha, e o token é armazenado no localStorage.
+2. Dashboard
+Área restrita onde os administradores podem visualizar, editar e excluir notícias.
+A lista de notícias é carregada dinamicamente via chamada à API backend.
+3. Publicação de Notícias
+Os administradores podem criar novas notícias através de um formulário.
+Cada notícia pode conter título, conteúdo e uma imagem associada.
+4. Área Pública
+As notícias publicadas ficam visíveis para todos os usuários, permitindo que leiam as notícias.
+5. PrivateRoute
+Componente que protege as rotas da área administrativa. Se o usuário não estiver logado, ele será redirecionado para a página de login.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Rotas
+A aplicação possui as seguintes rotas:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+/ - Página inicial, onde os leitores podem ver a lista de notícias.
+/login - Página de login, onde os administradores podem se autenticar.
+/dashboard - Área restrita para administração das notícias.
+/register - Página de registro de novos usuários (a ser implementada).
+/news/:id - Página de detalhes de uma notícia específica.
+Contribuições
+Faça um fork deste repositório.
+Crie uma branch para sua modificação (git checkout -b feature/nova-funcionalidade).
+Comite suas alterações (git commit -am 'Adicionando nova funcionalidade').
+Faça o push para a branch (git push origin feature/nova-funcionalidade).
+Envie um Pull Request.
